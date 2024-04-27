@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Mécanichien",
+    "description": "besoin d'un entretient pour votre véhicule, un problème mecanique ? Faites confiance à notre specialiste"
+  },
+  {
+    "id": 2,
+    "title": "Péripatétichienne",
+    "description": "besoin de vous détendre ? Laissez-vous aller avec notre professionelle de la relaxation. Au menu : massage, musique relaxante ..."
+  },
+  {
+    "id": 3,
+    "title": "Eléctrichien",
+    "description": "il peut vous brancher avec n'importe qui "
+  },
+  {
+    "id": 4,
+    "title": "Pharmachien",
+    "description": "anti-puce, vaccin rage, vermifuge"
+  },
+  {
+    "id": 5,
+    "title": "Physichien",
+    "description": "expert en sciences physiques et en étude de la matière"
+  },
+  {
+    "id": 6,
+    "title": "Musicien",
+    "description": "créateur de mélodies et d'harmonies pour enchanter vos oreilles"
+  },
+  {
+    "id": 7,
+    "title": "Technichien de surface",
+    "description": "Le technicien de surface assure l'entretien et la propreté des espaces intérieurs et extérieurs"
+  },
+  {
+    "id": 8,
+    "title": "Télépachien",
+    "description": "développez une connexion profonde avec votre animal grâce à notre expert en communication télépathique, facilitant la compréhension mutuelle"
+  },
+  {
+    "id": 9,
+    "title": "Informatichien",
+    "description": "besoin d'une solution informatique ? "
+  }
+]

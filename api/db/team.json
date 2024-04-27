@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "prenom": "Félichienne",
+    "age": 34,
+    "img": "/api/img/Capture d’écran 2024-04-26 à 16.52.36.png"
+  },
+  {
+    "id": 2,
+    "prenom": "Sébastchien",
+    "age": 65,
+    "img": "/api/img/Capture d’écran 2024-04-26 à 16.09.33.png"
+  },
+  {
+    "id": 3,
+    "prenom": "Luchien",
+    "age": 27,
+    "img": "/api/img/deve.png"
+  },
+  {
+    "id": 4,
+    "prenom": "Scooby",
+    "age": 43,
+    "img": "/api/img/hippie.png"
+  }
+]
