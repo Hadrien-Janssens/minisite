@@ -1,5 +1,6 @@
 import { renderNav } from "../layouts/nav";
 import { renderCardTeam } from "../components/cardTeam.js";
+import { renderFooter } from "../components/footer.js";
 
 const getTeams = async () => {
   const url = new URL(import.meta.env.VITE_BASE_URL_API);
@@ -12,7 +13,7 @@ let teams = await getTeams();
 
 document.querySelector("#app").innerHTML = `
 ${renderNav()}
-<main class="bg-slate-100 min-h-screen p-5">
+<main class="bg-slate-100  p-5">
 
 <ul class="flex gap-3 justify-center flex-wrap">
 ${teams
@@ -24,4 +25,5 @@ ${teams
   .join("")}
 </ul>
 </main>
+${renderFooter()}
 `;

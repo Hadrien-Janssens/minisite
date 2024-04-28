@@ -7,7 +7,7 @@ export function renderCardTeam(prenom, age, img) {
      <div>
         <div class="flex justify-between">
            <h4 class=" px-5 py-2 ">${prenom}</h4>
-           <p class="px-5 py-2 text-sm text-gray-600">${age}</p>
+           <p class="px-5 py-2 text-sm text-gray-600">${age} ans</p>
         </div>
         <div class="m-2 flex justify-end">
           <button

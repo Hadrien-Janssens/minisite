@@ -26,7 +26,7 @@
   },
   {
     "id": 6,
-    "title": "Musicien",
+    "title": "Musichien",
     "description": "créateur de mélodies et d'harmonies pour enchanter vos oreilles"
   },
   {
@@ -36,11 +36,6 @@
   },
   {
     "id": 8,
-    "title": "Télépachien",
-    "description": "développez une connexion profonde avec votre animal grâce à notre expert en communication télépathique, facilitant la compréhension mutuelle"
-  },
-  {
-    "id": 9,
     "title": "Informatichien",
     "description": "besoin d'une solution informatique ? "
   }

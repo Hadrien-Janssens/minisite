@@ -1,11 +1,11 @@
 import "../style.css";
 import { renderNav } from "../layouts/nav";
 import { renderCardService } from "../components/cardService.js";
+import { renderFooter } from "../components/footer.js";
 
 //recuperer les services
 const getServices = async () => {
   let url = new URL(import.meta.env.VITE_BASE_URL_API);
-
   const response = await fetch(`${url}services.php`);
   const services = await response.json();
   return services;
@@ -18,7 +18,7 @@ const render = async () => {
   //rendre
   document.querySelector("#app").innerHTML = `
     ${renderNav()}
-    <main class="bg-slate-100 min-h-screen p-5">
+    <main class="bg-slate-100  p-5">
     <ul class="flex gap-3 justify-center flex-wrap">
     ${services
       .map((service) => {
@@ -30,6 +30,7 @@ const render = async () => {
       
       </ul>
     </main>
+    ${renderFooter()}
     `;
 };
 render();

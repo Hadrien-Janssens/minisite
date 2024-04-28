@@ -9,19 +9,19 @@ export function renderNav() {
   let serviceActive = false;
   let teamsActive = false;
 
-  url == "http://localhost:5174/"
+  url === "http://localhost:5173/"
     ? (accueilActive = true)
     : (accueilActive = false);
 
-  url === "http://localhost:5174/contact/"
+  url === "http://localhost:5173/contact/"
     ? (contactActive = true)
     : (contactActive = false);
 
-  url === "http://localhost:5174/myservices/"
+  url === "http://localhost:5173/myservices/"
     ? (serviceActive = true)
     : (serviceActive = false);
 
-  url === "http://localhost:5174/teams/"
+  url === "http://localhost:5173/teams/"
     ? (teamsActive = true)
     : (teamsActive = false);
 
