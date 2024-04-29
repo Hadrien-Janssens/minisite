@@ -3,24 +3,41 @@
     "id": 1,
     "prenom": "Félichienne",
     "age": 34,
-    "img": "/api/img/Capture d’écran 2024-04-26 à 16.52.36.png"
+    "description": "Cette chienne offre des services de relaxation et de bien-être, mettant en œuvre diverses techniques telles que les massages et la méditation pour aider ses clients à se détendre et à retrouver leur équilibre intérieur. Elle possède une expertise dans l'art de créer une atmosphère apaisante et sécurisante, favorisant ainsi un état de relaxation profonde et durable. Grâce à sa formation et à son expérience, elle sait personnaliser ses séances pour répondre aux besoins spécifiques de chaque individu, offrant ainsi un soulagement physique et mental optimal.",
+    "img": "/api/img/Capture d’écran 2024-04-26 à 16.52.36.png",
+    "tarif": 100,
+    "job": ["peripatetichienne", "estetichienne", "musichien"]
   },
   {
     "id": 2,
     "prenom": "Sébastchien",
     "age": 65,
-    "img": "/api/img/Capture d’écran 2024-04-26 à 16.09.33.png"
+    "description": "Imaginez un compagnon à quatre pattes avec une polyvalence remarquable : ce chien allie les compétences d'un électricien habile et d'un mécanicien chevronné. Avec une agilité sans pareille, il résout les problèmes électriques complexes et répare les machines avec une précision chirurgicale. Son flair infaillible pour diagnostiquer les pannes et son dévouement sans limite en font un allié indispensable pour tout projet électromécanique. En tant que membre à part entière de l'équipe, ce chien déploie ses talents variés pour illuminer les environnements et remettre en marche les mécanismes les plus complexes, tout en apportant une dose de bonne humeur et de fidélité inconditionnelle.",
+    "img": "/api/img/Capture d’écran 2024-04-26 à 16.09.33.png",
+    "tarif": 75,
+    "job": ["mechanichien", "éléctrichien"]
   },
   {
     "id": 3,
     "prenom": "Luchien",
     "age": 27,
-    "img": "/api/img/deve.png"
+    "description": "Immergez-vous dans l'univers d'un geek surdoué en physique et informatique, dont l'esprit brillant navigue habilement entre les mystères de l'univers et les complexités du code. Doté d'une capacité exceptionnelle à résoudre les énigmes quantiques et les défis algorithmiques, il jongle avec aisance entre les mondes de la théorie et de la pratique. Sa passion pour la physique théorique se marie harmonieusement avec son expertise en programmation, lui permettant de concevoir des solutions innovantes pour des problèmes aussi variés que passionnants. Toujours avide de connaissances, il explore sans relâche les profondeurs de la physique et les possibilités infinies de la technologie, repoussant sans cesse les limites de la compréhension humaine. Son engagement envers la découverte et l'innovation fait de lui une force motrice essentielle dans les domaines de la science et de la technologie.",
+    "img": "/api/img/deve.png",
+    "tarif": 250,
+    "job": ["informatichien", "physichien"]
   },
   {
     "id": 4,
     "prenom": "Scooby",
     "age": 43,
-    "img": "/api/img/hippie.png"
+    "img": "/api/img/hippie.png",
+    "tarif": 90,
+    "description": "Plongez dans le monde d'un pharmacien atypique, où les frontières entre les médicaments et les expériences insolites s'estompent. Touche-à-tout passionné, il jongle avec autant de dextérité entre la distribution de remèdes traditionnels et la création de potions originales. Son univers décalé le mène à explorer des horizons variés, de la musique à l'informatique en passant par des petits boulots inhabituels comme technicien de surface. Au-delà de sa pharmacie, il incarne l'esprit curieux et aventurier, toujours en quête de nouvelles découvertes et de sensations inédites. Sa singularité réside dans sa capacité à mêler la science et la fantaisie, offrant à sa clientèle une expérience bien loin de la banalité.",
+    "job": [
+      "pharmachien",
+      "musichien",
+      "technichien de surface",
+      "informatichien"
+    ]
   }
 ]
