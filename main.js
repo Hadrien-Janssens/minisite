@@ -3,10 +3,21 @@ import { renderNav } from "./layouts/nav";
 import { renderCardAvis } from "./components/cardAvis";
 import { renderFooter } from "./components/footer";
 
+//URL pour la config local/enligne
 let url = new URL(import.meta.env.VITE_BASE_URL);
 url = url + "avis/index.html";
 console.log(url);
 
+let urlapi = new URL(import.meta.env.VITE_BASE_URL_API);
+urlapi = urlapi + "getAvis.php";
+
+//gestion des avis
+
+const response = await fetch(`${urlapi}`);
+let avisData = await response.json();
+console.log(avisData);
+
+// gestion du rendu
 document.querySelector("#app").innerHTML = `
 ${renderNav()}
 <main class="bg-slate-100 p-5 ">
@@ -48,12 +59,13 @@ ${renderNav()}
 <div class="max-w-3xl m-auto mt-10">
     <h2 class="font-medium text-xl ml-4 ">Avis</h2>
     <div class="flex p-4 gap-3 overflow-scroll">
-    ${renderCardAvis(
-      "Martin",
-      "Franchement super !!! 🔥 Les conseillers sont agrables et mon permis rapidemend repondre à mes besoins"
-    )}
-    ${renderCardAvis("Thérèse", "Franchement super !!! 🔥")}
-    ${renderCardAvis("Hugo", "Franchement super !!! 🔥")}
+    ${avisData
+      .map((avis) => {
+        return `
+        ${renderCardAvis(avis.prenom, avis.message)}
+        `;
+      })
+      .join("")}
     </div>
     <a href="${url}"><button class="border rounded-lg py-2 px-4 ml-4 text-white bg-blue-500 duration-200 hover:bg-blue-600"><i class="fa-solid fa-pen-to-square"></i> Rédiger</button></a>
 </div>

@@ -95,15 +95,15 @@ ${renderNav()}
         
         </div>
         <div class="text-sm text-gray-500 ">Score : 
-        <input type="radio" id="star1" name="star" class="hidden" value=1 />
-        <label for="star1"><i class="fa-regular fa-star"></i></label>  <input type="radio" id="star2" name="star" value=2 class="hidden" />
-        <label for="star2"><i class="fa-regular fa-star"></i></label>
-        <input type="radio" id="star3" value=3 name="star" class="hidden" />
-        <label for="star3"><i class="fa-regular fa-star fa-solid text-red-600"></i></label>
-        <input type="radio" id="star4" value=4 name="star" class="hidden" />
-        <label for="star4"><i class="fa-regular fa-star"></i></label>
-        <input type="radio" id="star5" name="star" value=5 class="hidden" />
-        <label for="star5"><i class="fa-regular fa-star"></i></label>
+        <input type="radio" id="1" name="star" class="hidden" value=1 />
+        <label class="star hover:cursor-pointer" for="1"><i class="fa-regular fa-star"></i></label>  <input type="radio" id="2" name="star" value=2 class="hidden" />
+        <label class="star hover:cursor-pointer" for="2"><i class="fa-regular fa-star"></i></label>
+        <input type="radio" id="3" value=3 name="star" class="hidden" />
+        <label class="star hover:cursor-pointer" for="3"><i class="fa-regular fa-star"></i></label>
+        <input type="radio" id="4" value=4 name="star" class="hidden" />
+        <label class="star hover:cursor-pointer" for="4"><i class="fa-regular fa-star"></i></label>
+        <input type="radio" id="5" name="star" value=5 class="hidden" />
+        <label class="star hover:cursor-pointer" for="5"><i class="fa-regular fa-star"></i></label>
         
        
         </div>
@@ -126,16 +126,13 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData.entries());
 
-  const res = await fetch(
-    "http://localhost:8888/minisite/api/submitContact.php",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }
-  );
+  const res = await fetch("http://localhost:8888/minisite/api/submitAvis.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
   if (res.status === 422) {
     let result = await res.json();
     console.log(result);
@@ -144,7 +141,8 @@ form.addEventListener("submit", async (e) => {
   } else {
     alert(`Formulaire envoyé ! 🎉 
     Nous vous recontacterons prochainement `);
-    window.location.reload();
+
+    window.location.href = import.meta.env.VITE_BASE_URL;
   }
 });
 
@@ -176,3 +174,22 @@ function suppressionErreurs() {
     erreur.remove();
   });
 }
+
+const stars = Array.from(document.querySelectorAll(".star"));
+
+stars.forEach((star) => {
+  star.addEventListener("click", () => {
+    let indice = star.getAttribute("for");
+
+    //suppression des couleurs d'etoile si changement d'avis
+    for (let i = 0; i < stars.length; i++) {
+      stars[i].firstChild.classList.remove("fa-solid");
+      stars[i].firstChild.classList.remove("text-yellow-400");
+    }
+
+    for (let i = 0; i < indice; i++) {
+      stars[i].firstChild.classList.add("fa-solid");
+      stars[i].firstChild.classList.add("text-yellow-400");
+    }
+  });
+});
