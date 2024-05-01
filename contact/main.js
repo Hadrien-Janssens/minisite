@@ -48,19 +48,18 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  const url = new URL(import.meta.env.VITE_BASE_URL);
+
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData.entries());
 
-  const res = await fetch(
-    "http://localhost:8888/minisite/api/submitContact.php",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }
-  );
+  const res = await fetch(`${url}api/submitContact.php`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
   if (res.status === 422) {
     let result = await res.json();
     console.log(result);

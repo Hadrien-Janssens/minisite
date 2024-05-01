@@ -5,8 +5,8 @@ import { renderFooter } from "../components/footer.js";
 
 //recuperer les services
 const getServices = async () => {
-  let url = new URL(import.meta.env.VITE_BASE_URL_API);
-  const response = await fetch(`${url}services.php`);
+  let url = new URL(import.meta.env.VITE_BASE_URL);
+  const response = await fetch(`${url}api/services.php`);
   const services = await response.json();
   return services;
 };

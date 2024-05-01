@@ -3,8 +3,8 @@ import { renderCardTeam } from "../components/cardTeam.js";
 import { renderFooter } from "../components/footer.js";
 
 const getTeams = async () => {
-  const url = new URL(import.meta.env.VITE_BASE_URL_API);
-  const response = await fetch(`${url}getTeams.php`);
+  const url = new URL(import.meta.env.VITE_BASE_URL);
+  const response = await fetch(`${url}api/getTeams.php`);
   const teams = await response.json();
   return teams;
 };

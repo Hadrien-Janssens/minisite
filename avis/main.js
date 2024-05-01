@@ -65,6 +65,7 @@ ${renderNav()}
         <div class="flex gap-3 mb-3">
           <select 
           class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          name="day"
           >
             ${days.map((day) => {
               return ` <option key=${day} value=${day} name="day">
@@ -75,6 +76,7 @@ ${renderNav()}
          
           <select 
           class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          name ="month"
           >
             ${months.map((month) => {
               return ` <option key=${month} value=${month} name="month">
@@ -85,6 +87,7 @@ ${renderNav()}
          
           <select 
           class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          name='year'
           >
             ${years.map((year) => {
               return ` <option key=${year} value=${year} name="year">
@@ -118,6 +121,8 @@ ${renderNav()}
 </main> 
 ${renderFooter()}
 `;
+// recuperer l'url
+const url = new URL(import.meta.env.VITE_BASE_URL);
 
 const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
@@ -126,7 +131,7 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData.entries());
 
-  const res = await fetch("http://localhost:8888/minisite/api/submitAvis.php", {
+  const res = await fetch(`${url}api/submitAvis.php`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -142,7 +147,10 @@ form.addEventListener("submit", async (e) => {
     alert(`Formulaire envoyé ! 🎉 
     Nous vous recontacterons prochainement `);
 
-    window.location.href = import.meta.env.VITE_BASE_URL;
+    //PRODUCTION
+    // window.location.href = import.meta.env.VITE_BASE_URL;
+    //local
+    window.location.href = "http://localhost:5173/";
   }
 });
 

@@ -9,19 +9,19 @@ export function renderNav() {
   let serviceActive = false;
   let teamsActive = false;
 
-  url === "http://localhost:5173/"
+  url === "https://minisite.hadrien-janssens.com/"
     ? (accueilActive = true)
     : (accueilActive = false);
 
-  url === "http://localhost:5173/contact/"
+  url === "https://minisite.hadrien-janssens.com/contact/"
     ? (contactActive = true)
     : (contactActive = false);
 
-  url === "http://localhost:5173/myservices/"
+  url === "https://minisite.hadrien-janssens.com/myservices/"
     ? (serviceActive = true)
     : (serviceActive = false);
 
-  url === "http://localhost:5173/teams/"
+  url === "https://minisite.hadrien-janssens.com/teams/"
     ? (teamsActive = true)
     : (teamsActive = false);
 

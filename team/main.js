@@ -5,8 +5,8 @@ const getTeam = async () => {
   let params = new URL(document.location).searchParams;
   let id = params.get("id");
 
-  const url = new URL(import.meta.env.VITE_BASE_URL_API);
-  const response = await fetch(`${url}getTeam.php?id=${id}`);
+  const url = new URL(import.meta.env.VITE_BASE_URL);
+  const response = await fetch(`${url}api/getTeam.php?id=${id}`);
   const team = await response.json();
   return team;
 };
