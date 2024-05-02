@@ -23,7 +23,7 @@ const render = async () => {
     ${services
       .map((service) => {
         return `
-        ${renderCardService(service.title, service.description)}
+        ${renderCardService(service.id, service.title, service.description)}
         `;
       })
       .join("")}

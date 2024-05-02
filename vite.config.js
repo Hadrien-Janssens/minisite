@@ -17,6 +17,7 @@ export default defineConfig({
         teams: resolve(__dirname, "teams/index.html"),
         team: resolve(__dirname, "team/index.html"),
         avis: resolve(__dirname, "avis/index.html"),
+        myservice: resolve(__dirname, "myservice/index.html"),
       },
     },
   },
