@@ -10,7 +10,6 @@ const getTeams = async () => {
   const teams = await response.json();
   return teams;
 };
-
 let teams = await getTeams();
 
 document.querySelector("#app").innerHTML = `
@@ -20,17 +19,30 @@ ${renderSearchBar()}
 <div id="listing"></div>
 </main>
 `;
+
+//ecouteur d'evenement
+function search() {
+  const searchInput = document.querySelector("#search");
+  searchInput.addEventListener("input", (e) => {
+    renderTeams(e.target.value);
+  });
+}
+function removeAccents(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 function renderTeams(searchParams) {
+  console.log("renderTeams");
   document.querySelector("#listing").innerHTML = `
 
 <ul class="flex gap-3 justify-center flex-wrap">
 ${
-  // quand il n'y a riend l'input
+  // quand il n'y a rien dans l'input
   searchParams === undefined
     ? teams
         .map((team) => {
           return `
-        ${renderCardTeam(team.prenom, team.age, team.img, team.id)}
+        ${renderCardTeam(team)}
         `;
         })
         .join("")
@@ -49,7 +61,7 @@ ${
         )
         .map((team) => {
           return `
-          ${renderCardTeam(team.prenom, team.age, team.img, team.id)}
+          ${renderCardTeam(team)}
           `;
         })
         .join("")
@@ -62,13 +74,3 @@ ${renderFooter()}
 }
 renderTeams();
 search();
-
-function search() {
-  const searchInput = document.querySelector("#search");
-  searchInput.addEventListener("input", (e) => {
-    renderTeams(e.target.value);
-  });
-}
-function removeAccents(str) {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}

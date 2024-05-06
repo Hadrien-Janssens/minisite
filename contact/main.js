@@ -8,7 +8,7 @@ ${renderNav()}
     <h1 class="text-xl font-medium px-5">Une suggestion ? Une question ?</h1>
     <h2 class="text-gray-400 font-medium mb-4 px-5">Prenez contact avec nous ici</h2>
     <div class="px-5 border-t  ">
-        <div class="flex gap-3 mt-3 ">
+      <div class="flex gap-3 mt-3 ">
         <div>
             <input
             type="text"
@@ -16,27 +16,30 @@ ${renderNav()}
             name="prenom"
             class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
             />
-            </div>
-            <div>
+        </div>
+        <div>
             <input
             type="text"
             placeholder="Nom de famille"
             name="nom"
             class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
             />
-            </div>
         </div>
+      </div>
+      
         <input
         type="text"
         placeholder="Adresse e-mail"
         name="email"
         class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
         />
+
         <textarea 
         type = "text"
         name ="message"
         placeholder="Votre message"
         class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3 min-h-36 resize-none"></textarea>
+
         <button type="submit" class="border rounded p-0.5 w-full mb-3 bg-blue-500 duration-200 hover:bg-blue-600 text-white  p-1 pl-3">Envoyer</button>
     </div>
 </form>

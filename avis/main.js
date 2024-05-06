@@ -1,4 +1,5 @@
 import { renderFooter } from "../components/footer";
+import { getTeams } from "../functions/getTeams";
 import { renderNav } from "../layouts/nav";
 
 const years = [];
@@ -24,6 +25,9 @@ const months = [
   "décembre",
 ];
 
+// afficher le prestataire concerné par l'avis en cours de réalisation
+const teams = await getTeams();
+
 document.querySelector("#app").innerHTML = `
 ${renderNav()}
 <main class="bg-slate-100 p-5">
@@ -37,7 +41,7 @@ ${renderNav()}
             type="text"
             placeholder="Prénom"
             name="prenom"
-            class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+            class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3"
             />
             </div>
             <div>
@@ -45,7 +49,7 @@ ${renderNav()}
             type="text"
             placeholder="Nom de famille"
             name="nom"
-            class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+            class="border rounded  w-full mb-3 bg-gray-50 p-1 pl-3"
             />
             </div>
         </div>
@@ -53,18 +57,18 @@ ${renderNav()}
         type="text"
         placeholder="Adresse e-mail"
         name="email"
-        class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+        class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3"
         />
         <input
         type="text"
         placeholder="ville"
         name="ville"
-        class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+        class="border rounded p-0.5 w-full mb-3 bg-gray-50  pl-3"
         />
         <label class="text-sm text-gray-500">Date de naissance</label>
         <div class="flex gap-3 mb-3">
           <select 
-          class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3" 
           name="day"
           >
             ${days.map((day) => {
@@ -75,7 +79,7 @@ ${renderNav()}
           </select>
          
           <select 
-          class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          class="border rounded  w-full mb-3 bg-gray-50 p-1 pl-3" 
           name ="month"
           >
             ${months.map((month) => {
@@ -86,7 +90,7 @@ ${renderNav()}
           </select>
          
           <select 
-          class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3" 
+          class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3" 
           name='year'
           >
             ${years.map((year) => {
@@ -95,8 +99,23 @@ ${renderNav()}
             </option>`;
             })}
           </select>
-        
-        </div>
+          
+          </div>
+          <input type="hidden" name="age" />
+
+          <label class="text-sm text-gray-500 ">Prestataire :</label>
+          <select 
+          class="border rounded  w-full mb-3 bg-gray-50 p-1 pl-3"
+          name="prestataire" >
+          <option value='0'>Aucun</option>
+          ${teams.map((team) => {
+            return `
+            <option name='prestataire' value="${team.id}">${team.prenom},${team.id} </option>
+            `;
+          })}
+          </select>
+
+          
         <div class="text-sm text-gray-500 ">Score : 
         <input type="radio" id="1" name="star" class="hidden" value=1 />
         <label class="star hover:cursor-pointer" for="1"><i class="fa-regular fa-star"></i></label>  <input type="radio" id="2" name="star" value=2 class="hidden" />
@@ -130,7 +149,6 @@ form.addEventListener("submit", async (e) => {
 
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData.entries());
-
   const res = await fetch(`${url}api/submitAvis.php`, {
     method: "POST",
     headers: {
@@ -140,7 +158,6 @@ form.addEventListener("submit", async (e) => {
   });
   if (res.status === 422) {
     let result = await res.json();
-    console.log(result);
     suppressionErreurs();
     affichageErreurs(result);
   } else {

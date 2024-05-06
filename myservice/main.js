@@ -21,6 +21,11 @@ const getTeams = async () => {
   return teams;
 };
 
+//retirer les accents pour le filtre
+function removeAccents(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 let service = await getService();
 let teams = await getTeams();
 
@@ -30,12 +35,20 @@ ${renderNav()}
   <div class="max-w-3xl  m-auto">
     <div class="my-5">
       <h1 class="text-xl font-bold my-5"> ${service.title}</h1>
-      <h2 class="font-medium text-lg">Description</h2>
+      <h2 class="font-medium text-lg">Description :</h2>
       <p class="text-gray-500">${service.description}</p>
     </div>
-    <h2 class="font-medium text-lg">Prestataire</h2>
+    <h2 class="font-medium text-lg">Prestataire pour ce poste : </h2>
     <div class="flex gap-5 overflow-scroll p-5">
     ${teams
+      .filter((team) =>
+        //chatGPT m'a aidé pour le .some et pour la function removeAccent, j'avoue ...
+        team.job.some((j) =>
+          removeAccents(j.toLowerCase()).includes(
+            removeAccents(service.title.toLowerCase())
+          )
+        )
+      )
       .map((team) => {
         return `
       ${renderCardTeam(team.prenom, team.age, team.img, team.id)}

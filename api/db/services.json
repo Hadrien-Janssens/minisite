@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "Mécanichien",
-    "description": "besoin d'un entretient pour votre véhicule, un problème mecanique ? Faites confiance à notre specialiste"
+    "description": "Nos mécaniciens sont des professionnels hautement qualifiés qui assurent le bon fonctionnement et la sécurité de nos équipements mécaniques. Leur expertise couvre une gamme étendue de machines, allant des véhicules automobiles aux machines industrielles complexes. En utilisant leurs compétences techniques et leur expérience pratique, nos mécaniciens diagnostiquent et réparent les problèmes mécaniques avec précision et efficacité. Leur attention méticuleuse aux détails garantit que chaque réparation est effectuée selon les normes les plus élevées, assurant ainsi la fiabilité et la durabilité de nos équipements. En tant que membres essentiels de notre équipe, nos mécaniciens contribuent à maintenir nos opérations en marche et à assurer notre succès continu."
   },
   {
     "id": 2,
     "title": "Péripatétichienne",
-    "description": "besoin de vous détendre ? Laissez-vous aller avec notre professionelle de la relaxation. Au menu : massage, musique relaxante ..."
+    "description": "Besoin de vous détendre ? Laissez-vous aller avec notre professionnelle de la relaxation, une peripatéticienne expérimentée dans l'art du bien-être. Au menu, elle vous propose une expérience apaisante incluant des massages revitalisants et des séances de musique relaxante. Grâce à ses compétences expertes et son approche attentionnée, elle saura vous offrir un moment de détente et de décompression incomparable. Confiez-vous à ses pattes habiles et laissez-vous transporter dans un univers de calme et de sérénité."
   },
   {
     "id": 3,
@@ -17,26 +17,26 @@
   {
     "id": 4,
     "title": "Pharmachien",
-    "description": "anti-puce, vaccin rage, vermifuge"
+    "description": "Nos pharmaciens sont des professionnels de la santé dévoués qui assurent la distribution et la gestion des médicaments. Experts en pharmacothérapie, ils dispensent des conseils personnalisés sur l'utilisation adéquate des médicaments et sur les interactions médicamenteuses. Toujours disponibles pour répondre aux questions et aux préoccupations des clients, nos pharmaciens jouent un rôle crucial dans la promotion de la santé et la prévention des maladies. Leur connaissance approfondie des médicaments garantit que chaque patient reçoive les soins pharmaceutiques les plus adaptés à ses besoins spécifiques. Engagés envers le bien-être de la communauté, nos pharmaciens sont des acteurs indispensables du système de santé."
   },
   {
     "id": 5,
     "title": "Physichien",
-    "description": "expert en sciences physiques et en étude de la matière"
+    "description": "Notre physicien est un professionnel hautement qualifié spécialisé dans l'étude de la physique, la science fondamentale qui explore les lois et les principes régissant l'univers. Avec une expertise approfondie dans divers domaines tels que la mécanique, l'électromagnétisme, la thermodynamique et la physique quantique, notre physicien mène des recherches innovantes et contribue à l'avancement des connaissances scientifiques. Toujours curieux et passionné par la compréhension du monde qui nous entoure, il utilise des outils mathématiques et expérimentaux sophistiqués pour explorer les phénomènes naturels les plus complexes. Grâce à son dévouement et à sa rigueur scientifique, notre physicien apporte des contributions significatives à divers domaines tels que la technologie, la médecine et l'environnement, améliorant ainsi notre compréhension de l'univers et ouvrant de nouvelles perspectives pour l'avenir."
   },
   {
     "id": 6,
     "title": "Musichien",
-    "description": "créateur de mélodies et d'harmonies pour enchanter vos oreilles"
+    "description": "Nos musiciens sont des artistes passionnés qui captivent les cœurs et les esprits par le pouvoir de la musique. Dotés d'un talent exceptionnel et d'une créativité débordante, ils explorent un large éventail de styles et d'instruments pour créer des mélodies envoûtantes. Grâce à leur maîtrise technique et à leur sensibilité artistique, nos musiciens transportent leur public dans un voyage émotionnel unique à chaque performance. Qu'ils jouent en solo, en duo ou en groupe, leur passion et leur dévouement transparaissent dans chaque note et chaque rythme. En tant qu'ambassadeurs de l'expression artistique, nos musiciens enrichissent nos vies et créent des liens précieux à travers la magie de la musique"
   },
   {
     "id": 7,
     "title": "Technichien de surface",
-    "description": "Le technicien de surface assure l'entretien et la propreté des espaces intérieurs et extérieurs"
+    "description": "Nos techniciens de surface sont des professionnels dédiés qui veillent à maintenir un environnement propre, sûr et accueillant. Leur travail consiste à nettoyer et entretenir les espaces intérieurs et extérieurs, y compris les bureaux, les couloirs, les salles de réunion et les zones communes. Armés d'une attention méticuleuse aux détails et d'une gamme d'outils et de produits de nettoyage efficaces, nos techniciens de surface veillent à ce que chaque espace soit impeccablement propre et bien entretenu. Leur travail discret et professionnel contribue à créer un environnement de travail confortable et hygiénique pour tous. En tant que membres précieux de notre équipe, nos techniciens de surface garantissent que chaque lieu reflète notre engagement envers l'excellence et le bien-être de tous."
   },
   {
     "id": 8,
     "title": "Informatichien",
-    "description": "besoin d'une solution informatique ? "
+    "description": "Nos informaticiens sont des experts dévoués qui assurent le bon fonctionnement et la sécurité de nos systèmes informatiques. Leur rôle consiste à gérer et à maintenir les réseaux, les serveurs et les logiciels pour garantir une connectivité fluide et une efficacité opérationnelle. Toujours à l'avant-garde des dernières technologies, nos informaticiens développent et mettent en œuvre des solutions innovantes pour répondre aux besoins spécifiques de notre organisation. Leur expertise en matière de cybersécurité et de protection des données garantit que nos informations sensibles sont sécurisées contre les menaces potentielles. En tant que partenaires essentiels de notre équipe, nos informaticiens contribuent à maintenir notre productivité et notre compétitivité dans un monde numérique en constante évolution."
   }
 ]

@@ -1,30 +1,33 @@
 [
   {
     "id": 1,
-    "prenom": "Félichienne",
+    "prenom": "F\u00e9lichienne",
     "age": 34,
-    "description": "Cette chienne offre des services de relaxation et de bien-être, mettant en œuvre diverses techniques telles que les massages et la méditation pour aider ses clients à se détendre et à retrouver leur équilibre intérieur. Elle possède une expertise dans l'art de créer une atmosphère apaisante et sécurisante, favorisant ainsi un état de relaxation profonde et durable. Grâce à sa formation et à son expérience, elle sait personnaliser ses séances pour répondre aux besoins spécifiques de chaque individu, offrant ainsi un soulagement physique et mental optimal.",
-    "img": "/api/img/Capture d’écran 2024-04-26 à 16.52.36.png",
+    "description": "Cette chienne offre des services de relaxation et de bien-\u00eatre, mettant en \u0153uvre diverses techniques telles que les massages et la m\u00e9ditation pour aider ses clients \u00e0 se d\u00e9tendre et \u00e0 retrouver leur \u00e9quilibre int\u00e9rieur. Elle poss\u00e8de une expertise dans l'art de cr\u00e9er une atmosph\u00e8re apaisante et s\u00e9curisante, favorisant ainsi un \u00e9tat de relaxation profonde et durable. Gr\u00e2ce \u00e0 sa formation et \u00e0 son exp\u00e9rience, elle sait personnaliser ses s\u00e9ances pour r\u00e9pondre aux besoins sp\u00e9cifiques de chaque individu, offrant ainsi un soulagement physique et mental optimal.",
+    "img": "/api/img/Capture d\u2019\u00e9cran 2024-04-26 \u00e0 16.52.36.png",
     "tarif": 100,
-    "job": ["peripatetichienne", "estetichienne", "musichien"]
+    "job": ["peripatetichienne", "estetichienne", "musichien"],
+    "star": ["3", 4, 2, 3, 1, 4]
   },
   {
     "id": 2,
-    "prenom": "Sébastchien",
+    "prenom": "S\u00e9bastchien",
     "age": 65,
-    "description": "Imaginez un compagnon à quatre pattes avec une polyvalence remarquable : ce chien allie les compétences d'un électricien habile et d'un mécanicien chevronné. Avec une agilité sans pareille, il résout les problèmes électriques complexes et répare les machines avec une précision chirurgicale. Son flair infaillible pour diagnostiquer les pannes et son dévouement sans limite en font un allié indispensable pour tout projet électromécanique. En tant que membre à part entière de l'équipe, ce chien déploie ses talents variés pour illuminer les environnements et remettre en marche les mécanismes les plus complexes, tout en apportant une dose de bonne humeur et de fidélité inconditionnelle.",
-    "img": "/api/img/Capture d’écran 2024-04-26 à 16.09.33.png",
+    "description": "Imaginez un compagnon \u00e0 quatre pattes avec une polyvalence remarquable : ce chien allie les comp\u00e9tences d'un \u00e9lectricien habile et d'un m\u00e9canicien chevronn\u00e9. Avec une agilit\u00e9 sans pareille, il r\u00e9sout les probl\u00e8mes \u00e9lectriques complexes et r\u00e9pare les machines avec une pr\u00e9cision chirurgicale. Son flair infaillible pour diagnostiquer les pannes et son d\u00e9vouement sans limite en font un alli\u00e9 indispensable pour tout projet \u00e9lectrom\u00e9canique. En tant que membre \u00e0 part enti\u00e8re de l'\u00e9quipe, ce chien d\u00e9ploie ses talents vari\u00e9s pour illuminer les environnements et remettre en marche les m\u00e9canismes les plus complexes, tout en apportant une dose de bonne humeur et de fid\u00e9lit\u00e9 inconditionnelle.",
+    "img": "/api/img/Capture d\u2019\u00e9cran 2024-04-26 \u00e0 16.09.33.png",
     "tarif": 75,
-    "job": ["mechanichien", "éléctrichien"]
+    "job": ["mecanichien", "\u00e9l\u00e9ctrichien"],
+    "star": [3, 4, 2, 3, 5]
   },
   {
     "id": 3,
     "prenom": "Luchien",
     "age": 27,
-    "description": "Immergez-vous dans l'univers d'un geek surdoué en physique et informatique, dont l'esprit brillant navigue habilement entre les mystères de l'univers et les complexités du code. Doté d'une capacité exceptionnelle à résoudre les énigmes quantiques et les défis algorithmiques, il jongle avec aisance entre les mondes de la théorie et de la pratique. Sa passion pour la physique théorique se marie harmonieusement avec son expertise en programmation, lui permettant de concevoir des solutions innovantes pour des problèmes aussi variés que passionnants. Toujours avide de connaissances, il explore sans relâche les profondeurs de la physique et les possibilités infinies de la technologie, repoussant sans cesse les limites de la compréhension humaine. Son engagement envers la découverte et l'innovation fait de lui une force motrice essentielle dans les domaines de la science et de la technologie.",
+    "description": "Immergez-vous dans l'univers d'un geek surdou\u00e9 en physique et informatique, dont l'esprit brillant navigue habilement entre les myst\u00e8res de l'univers et les complexit\u00e9s du code. Dot\u00e9 d'une capacit\u00e9 exceptionnelle \u00e0 r\u00e9soudre les \u00e9nigmes quantiques et les d\u00e9fis algorithmiques, il jongle avec aisance entre les mondes de la th\u00e9orie et de la pratique. Sa passion pour la physique th\u00e9orique se marie harmonieusement avec son expertise en programmation, lui permettant de concevoir des solutions innovantes pour des probl\u00e8mes aussi vari\u00e9s que passionnants. Toujours avide de connaissances, il explore sans rel\u00e2che les profondeurs de la physique et les possibilit\u00e9s infinies de la technologie, repoussant sans cesse les limites de la compr\u00e9hension humaine. Son engagement envers la d\u00e9couverte et l'innovation fait de lui une force motrice essentielle dans les domaines de la science et de la technologie.",
     "img": "/api/img/deve.png",
     "tarif": 250,
-    "job": ["informatichien", "physichien"]
+    "job": ["informatichien", "physichien"],
+    "star": [4, 5, 4, 3, 2]
   },
   {
     "id": 4,
@@ -32,12 +35,42 @@
     "age": 43,
     "img": "/api/img/hippie.png",
     "tarif": 90,
-    "description": "Plongez dans le monde d'un pharmacien atypique, où les frontières entre les médicaments et les expériences insolites s'estompent. Touche-à-tout passionné, il jongle avec autant de dextérité entre la distribution de remèdes traditionnels et la création de potions originales. Son univers décalé le mène à explorer des horizons variés, de la musique à l'informatique en passant par des petits boulots inhabituels comme technicien de surface. Au-delà de sa pharmacie, il incarne l'esprit curieux et aventurier, toujours en quête de nouvelles découvertes et de sensations inédites. Sa singularité réside dans sa capacité à mêler la science et la fantaisie, offrant à sa clientèle une expérience bien loin de la banalité.",
+    "description": "Plongez dans le monde d'un pharmacien atypique, o\u00f9 les fronti\u00e8res entre les m\u00e9dicaments et les exp\u00e9riences insolites s'estompent. Touche-\u00e0-tout passionn\u00e9, il jongle avec autant de dext\u00e9rit\u00e9 entre la distribution de rem\u00e8des traditionnels et la cr\u00e9ation de potions originales. Son univers d\u00e9cal\u00e9 le m\u00e8ne \u00e0 explorer des horizons vari\u00e9s, de la musique \u00e0 l'informatique en passant par des petits boulots inhabituels comme technicien de surface. Au-del\u00e0 de sa pharmacie, il incarne l'esprit curieux et aventurier, toujours en qu\u00eate de nouvelles d\u00e9couvertes et de sensations in\u00e9dites. Sa singularit\u00e9 r\u00e9side dans sa capacit\u00e9 \u00e0 m\u00ealer la science et la fantaisie, offrant \u00e0 sa client\u00e8le une exp\u00e9rience bien loin de la banalit\u00e9.",
     "job": [
       "pharmachien",
       "musichien",
       "technichien de surface",
       "informatichien"
-    ]
+    ],
+    "star": ["5", 4, 5, 4, 3, 2]
+  },
+  {
+    "id": 5,
+    "prenom": "Brutus",
+    "age": 8,
+    "img": "/api/img/chiwawa.png",
+    "tarif": 5,
+    "description": "Ce chien, depuis son plus jeune \u00e2ge, a \u00e9t\u00e9 plong\u00e9 malheureusement dans le monde de la prostitution canine. \u00c0 travers les rues sombres et les quartiers abandonn\u00e9s, il a appris les ficelles du m\u00e9tier, d\u00e9veloppant des comp\u00e9tences et une expertise in\u00e9gal\u00e9es dans ce domaine. Aujourd'hui, malgr\u00e9 son pass\u00e9 difficile, il est devenu un expert de la rue, naviguant habilement dans les m\u00e9andres de la vie urbaine pour satisfaire ses besoins fondamentaux. Son intuition aff\u00fbt\u00e9e et son sens aiguis\u00e9 de la survie lui permettent de tirer le meilleur parti de chaque situation, assurant ainsi sa propre subsistance dans un monde souvent impitoyable.",
+    "job": ["peripatetichienne"],
+    "star": [5, 1, 1, 1]
+  },
+  {
+    "id": 6,
+    "prenom": "Sachat",
+    "age": 40,
+    "img": "/api/img/chat.png",
+    "tarif": 5,
+    "description": "Cet employ\u00e9, myst\u00e9rieusement pr\u00e9sent dans l'entreprise, semble naviguer \u00e0 travers les journ\u00e9es sans jamais r\u00e9ellement contribuer. Il semble \u00eatre un vrai chat-rlatan, se d\u00e9pla\u00e7ant avec une habilet\u00e9 d\u00e9concertante \u00e0 travers les corridors de l'entreprise sans jamais laisser de v\u00e9ritable empreinte de son travail. Son manque d'implication et de comp\u00e9tence laisse perplexe ses coll\u00e8gues, qui se demandent souvent comment il parvient \u00e0 rester employ\u00e9. Malgr\u00e9 les tentatives de rationalisation, son r\u00f4le dans l'organisation reste flou, alimentant les sp\u00e9culations sur les raisons pour lesquelles il demeure encore pr\u00e9sent.",
+    "job": [
+      "peripatetichienne",
+      "musichien",
+      "technichien de surface",
+      "mecanichien",
+      "electrichien",
+      "pharmachien",
+      "physichien",
+      "informatichien"
+    ],
+    "star": [3, 2, 4, 3]
   }
 ]

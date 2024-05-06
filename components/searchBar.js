@@ -2,7 +2,7 @@ export function renderSearchBar() {
   return `
         <div class="flex gap-3 my-5 flex-col sm:flex-row sm:justify-center m-auto sm:items-center">
             <div class="flex py-3 my-2  
-             rounded   bg-white px-4 text-slate-500  rounded shadow items-center"">
+             rounded   bg-white px-4 text-slate-500 shadow items-center"">
         
              <i class='fa-solid fa-magnifying-glass text-slate-500 px-4'></i>:
                 <input 

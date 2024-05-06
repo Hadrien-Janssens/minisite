@@ -11,7 +11,6 @@ let urlapi = new URL(import.meta.env.VITE_BASE_URL);
 urlapi = urlapi + "api/getAvis.php";
 
 //gestion des avis
-
 const response = await fetch(`${urlapi}`);
 let avisData = await response.json();
 
