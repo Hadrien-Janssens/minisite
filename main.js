@@ -18,7 +18,12 @@ let avisData = await response.json();
 document.querySelector("#app").innerHTML = `
 ${renderNav()}
 <main class="bg-slate-100 p-5 ">
-
+<div class="max-w-3xl  m-auto rounded  mb-10 relative">
+    <img src="/hero.png" alt="" />
+    <div class="absolute bg-blue-500 bottom-0 left-1/2 -translate-x-1/2 text-white rounded py-3 px-10 text-3xl font-black" >
+        <h1>Pat-Patrouille</h1>
+    </div>
+</div>
 <div class="flex flex-col md:flex-row gap-5 max-w-3xl  m-auto ">
     <div class="p-5 md:w-4/6  rounded shadow bg-white text-justify w-full border duration-300  hover:shadow-md grow basis-4/6 ">
         <h2 class="text-lg font-medium">Qui sommes-nous?</h2>

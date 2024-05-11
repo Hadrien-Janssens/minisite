@@ -20,6 +20,22 @@ ${renderSearchBar()}
 </main>
 `;
 
+//gestion de tri
+let toggle = false;
+const filterBtn = Array.from(document.querySelectorAll(".filter-btn"));
+const handleClick = (e) => {
+  toggle = !toggle;
+  if (toggle) {
+    e.target.classList.value += " bg-blue-500 text-white";
+  } else {
+    e.target.classList.value =
+      "px-2 py-1  rounded-xl border border-blue-500 text-sm text-blue-500 filter-btn";
+  }
+};
+filterBtn.forEach((btn) => {
+  btn.addEventListener("click", handleClick);
+});
+
 //ecouteur d'evenement
 function search() {
   const searchInput = document.querySelector("#search");
@@ -32,7 +48,6 @@ function removeAccents(str) {
 }
 
 function renderTeams(searchParams) {
-  console.log("renderTeams");
   document.querySelector("#listing").innerHTML = `
 
 <ul class="flex gap-3 justify-center flex-wrap">

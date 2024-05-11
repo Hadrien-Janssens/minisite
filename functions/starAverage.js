@@ -3,7 +3,6 @@ export function starAverage(star) {
   if (star !== undefined && Array.isArray(star)) {
     let nombreDeNote = star.length;
     let somme = 0;
-    console.log("salut", star);
     star.forEach((s) => {
       somme += parseInt(s);
     });
