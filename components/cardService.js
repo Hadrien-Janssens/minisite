@@ -1,8 +1,8 @@
 export function renderCardService(id, title, description) {
   //local
-  let url = "http://localhost:5173/";
+  // let url = "http://localhost:5173/";
   //production
-  // let url = "https://minisite.hadrien-janssens.com/";
+  let url = "https://minisite.hadrien-janssens.com/";
 
   return `
   <li class="relative border bg-white rounded-md flex flex-col basis-60 shrink-0 grow min-h-52 duration-300 shadow hover:shadow-xl hover:cursor-pointer hover:scale-105">

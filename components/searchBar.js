@@ -1,5 +1,3 @@
-import { renderFilter } from "./filter";
-
 export function renderSearchBar() {
   return `
         <div class="flex gap-3 my-5 flex-col sm:flex-row sm:justify-center m-auto sm:items-center">
@@ -13,8 +11,7 @@ export function renderSearchBar() {
                 class="placeholder:text-slate-500 mx-4 grow"
                 placeholder=" métier ou nom"/>
             </div>
-            
-          ${renderFilter()}
+          
         </div>
           `;
 }

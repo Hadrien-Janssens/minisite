@@ -165,9 +165,9 @@ form.addEventListener("submit", async (e) => {
     Nous vous recontacterons prochainement `);
 
     //PRODUCTION
-    // window.location.href = import.meta.env.VITE_BASE_URL;
+    window.location.href = import.meta.env.VITE_BASE_URL;
     //local
-    window.location.href = "http://localhost:5173/";
+    // window.location.href = "http://localhost:5173/";
   }
 });
 

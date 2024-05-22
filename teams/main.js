@@ -19,24 +19,26 @@ ${renderSearchBar()}
 <div id="listing"></div>
 </main>
 `;
-
 //gestion de tri
-let toggle = false;
+
 const filterBtn = Array.from(document.querySelectorAll(".filter-btn"));
 const handleClick = (e) => {
-  toggle = !toggle;
-  if (toggle) {
+  if (
+    e.target.classList.value ===
+    "px-2 py-1  rounded-xl border border-blue-500 text-sm text-blue-500 filter-btn"
+  ) {
     e.target.classList.value += " bg-blue-500 text-white";
   } else {
     e.target.classList.value =
       "px-2 py-1  rounded-xl border border-blue-500 text-sm text-blue-500 filter-btn";
   }
+  renderTeams();
 };
 filterBtn.forEach((btn) => {
   btn.addEventListener("click", handleClick);
 });
 
-//ecouteur d'evenement
+//ecouteur d'evenement searchBar
 function search() {
   const searchInput = document.querySelector("#search");
   searchInput.addEventListener("input", (e) => {
@@ -47,8 +49,12 @@ function removeAccents(str) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-function renderTeams(searchParams) {
-  document.querySelector("#listing").innerHTML = `
+function renderTeams(searchParams, filtre) {
+  const listing = document.querySelector("#listing");
+  //debut condition filtrage
+
+  // fin condition filtrage
+  listing.innerHTML = `
 
 <ul class="flex gap-3 justify-center flex-wrap">
 ${

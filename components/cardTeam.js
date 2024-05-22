@@ -1,8 +1,8 @@
 import { nombreAvis, renderMoyenne } from "../functions/starAverage";
 
 export function renderCardTeam(team) {
-  // const url = new URL(import.meta.env.VITE_BASE_URL);
-  const url = "http://localhost:5173/";
+  const url = new URL(import.meta.env.VITE_BASE_URL);
+  // const url = "http://localhost:5173/";
 
   //gestion de la moyenne des stars
   let starAverage = renderMoyenne(team.star);

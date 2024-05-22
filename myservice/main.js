@@ -51,7 +51,7 @@ ${renderNav()}
       )
       .map((team) => {
         return `
-      ${renderCardTeam(team.prenom, team.age, team.img, team.id)}
+      ${renderCardTeam(team)}
       `;
       })
       .join("")}

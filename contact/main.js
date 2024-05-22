@@ -14,7 +14,7 @@ ${renderNav()}
             type="text"
             placeholder="Prénom"
             name="prenom"
-            class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+            class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3"
             />
         </div>
         <div>
@@ -22,7 +22,7 @@ ${renderNav()}
             type="text"
             placeholder="Nom de famille"
             name="nom"
-            class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+            class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3"
             />
         </div>
       </div>
@@ -31,16 +31,16 @@ ${renderNav()}
         type="text"
         placeholder="Adresse e-mail"
         name="email"
-        class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3"
+        class="border rounded w-full mb-3 bg-gray-50 p-1 pl-3"
         />
 
         <textarea 
         type = "text"
         name ="message"
         placeholder="Votre message"
-        class="border rounded p-0.5 w-full mb-3 bg-gray-50 p-1 pl-3 min-h-36 resize-none"></textarea>
+        class="border rounded  w-full mb-3 bg-gray-50 p-1 pl-3 min-h-36 resize-none"></textarea>
 
-        <button type="submit" class="border rounded p-0.5 w-full mb-3 bg-blue-500 duration-200 hover:bg-blue-600 text-white  p-1 pl-3">Envoyer</button>
+        <button type="submit" class="border rounded w-full mb-3 bg-blue-500 duration-200 hover:bg-blue-600 text-white  p-1 pl-3">Envoyer</button>
     </div>
 </form>
 </main> 

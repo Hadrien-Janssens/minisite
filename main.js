@@ -13,6 +13,13 @@ urlapi = urlapi + "api/getAvis.php";
 //gestion des avis
 const response = await fetch(`${urlapi}`);
 let avisData = await response.json();
+//rendu de 5 derniers commentaires sur la page d'accueil
+let longueurTableau = avisData.length;
+let array = [];
+for (let i = 1; i < 5; i++) {
+  array.push(avisData[longueurTableau - i]);
+}
+avisData = array;
 
 // gestion du rendu
 document.querySelector("#app").innerHTML = `
@@ -50,10 +57,12 @@ ${renderNav()}
                 <p class="text-gray-600">pat-patrouille@gmail.com</p>
                 <p class="text-gray-600">0466/70.35.22</p>
             </div>
-            <div class="flex flex-col pl-2 ">
-            <i class="fa-solid fa-file-pen p-2"></i>
-            <i class="fa-solid fa-envelope p-2"></i>
-            <i class="fa-solid fa-phone p-2"></i>
+            <div class="flex flex-col pl-2 group">
+            <a href="https://minisite.hadrien-janssens.com/contact/" class=" inline-block">
+                <i class="fa-solid fa-file-pen p-2 group-hover:text-blue-500"></i>
+            </a>
+            <a href="mailto:bidon@gmail.com"><i class="fa-solid fa-envelope p-2 "></i></a>
+            <a href="tel:+32496333444"><i class="fa-solid fa-phone p-2"></i></a>
             </div>
         </div>    
     </div>
@@ -78,6 +87,7 @@ ${renderNav()}
         `;
       })
       .join("")}
+      
     </div>
     <a href="/avis/index.html"><button class="border rounded-lg py-2 px-4 ml-4 text-white bg-blue-500 duration-200 hover:bg-blue-600"><i class="fa-solid fa-pen-to-square"></i> Rédiger</button></a>
 </div>
